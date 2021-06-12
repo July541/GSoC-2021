@@ -48,7 +48,7 @@ Our service is divided into three methods according to the LSP specification:
 2. - [x] Supply plugin configure. (2021-06-02)
 3. - [x] Fundamental test frame. (2021-06-03)
 4. - [ ] `prepareCallHierarchy`
-    1. - [ ] Expected tests, including typeclass, GADTs, typefamily.
+    1. - [x] Expected tests, including typeclass, GADTs, typefamily. (2021-06-12)
     2. - [ ] Unexpected tests, including invalid position and invalid file path(scarcely possible in my mind).
     3. - [ ] Construct `CallHierarchyItem`
 5. - [ ] `incomingCalls`
