@@ -50,10 +50,14 @@ Our service is divided into three methods according to the LSP specification:
 4. - [ ] `prepareCallHierarchy`
     1. - [x] Expected tests, including typeclass, GADTs, typefamily. (2021-06-12)
     2. - [ ] Unexpected tests, including invalid position and invalid file path(scarcely possible in my mind).
-    3. - [ ] Construct `CallHierarchyItem`
+    3. - [x] Construct `CallHierarchyItem`. (2021-06-21)
 5. - [ ] `incomingCalls`
     1. - [ ] Corresponding tests.
     2. - [ ] Handle `incomingCalls` request.
 6. - [ ] `outgoingCalls`
     1. - [ ] Corresponding tests.
     2. - [ ] Handle `outgoingCalls` request.
+
+## Diaries
+- [2021-07-02] Write sql to query outgoing calls.
+- [2021-07-02] Rewrite the directory structure to support DIY types and queries.
