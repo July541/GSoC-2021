@@ -4,6 +4,10 @@
 
 link: https://summerofcode.withgoogle.com/projects/#6190959651454976
 
+prs:
+  - [LSP Support](https://github.com/haskell/lsp/pull/332)
+  - [Call hierarchy itself](https://github.com/haskell/haskell-language-server/pull/1955)
+
 ### Title
 **Support call hierarchy in Haskell Language Server**
 
@@ -47,17 +51,24 @@ Our service is divided into three methods according to the LSP specification:
 1. - [x] Add support of haskell-lsp. (2021-06-01)
 2. - [x] Supply plugin configure. (2021-06-02)
 3. - [x] Fundamental test frame. (2021-06-03)
-4. - [ ] `prepareCallHierarchy`
+4. - [x] `prepareCallHierarchy`
     1. - [x] Expected tests, including typeclass, GADTs, typefamily. (2021-06-12)
-    2. - [ ] Unexpected tests, including invalid position and invalid file path(scarcely possible in my mind).
+    2. - [x] Unexpected tests, including invalid position and invalid file path(scarcely possible in my mind).
     3. - [x] Construct `CallHierarchyItem`. (2021-06-21)
-5. - [ ] `incomingCalls`
-    1. - [ ] Corresponding tests.
-    2. - [ ] Handle `incomingCalls` request.
-6. - [ ] `outgoingCalls`
-    1. - [ ] Corresponding tests.
-    2. - [ ] Handle `outgoingCalls` request.
+5. - [x] `incomingCalls`
+    1. - [x] Corresponding tests.
+    2. - [x] Handle `incomingCalls` request.
+6. - [x] `outgoingCalls`
+    1. - [x] Corresponding tests.
+    2. - [x] Handle `outgoingCalls` request.
 
 ## Diaries
 - [2021-07-02] Write sql to query outgoing calls.
 - [2021-07-02] Rewrite the directory structure to support DIY types and queries.
+- [2021-07-11] Release one demo video.
+- [2021-07-26] Refresh `hiedb` to ensure real-time data returned.
+- [2021-07-28] Merged!
+- [2021-08-03] Documented.
+- [2021-08-03] Support call from type signature.
+- [2021-08-27] Support call from function pattern.
+- [2021-09-06] Incoming call can jump to corresponding typeclass isntance directly.
